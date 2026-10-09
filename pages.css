@@ -20,3 +20,11 @@
 footer .brand-logo{width:165px;height:110.5px}
 @media(max-width:940px){.header{padding-top:13px;padding-bottom:13px}}
 @media(max-width:700px){.header .brand-logo{width:115px;height:77px}footer .brand-logo{width:145px;height:97.1px}}
+/* Navigation remains accessible while scrolling on every page. */
+.header,.inner-page .header{position:fixed;top:0;left:0;right:0;z-index:50}
+.header.is-scrolled{box-shadow:0 6px 24px #07100b40}
+.inner-page main{padding-top:var(--header-height,123px)}
+html{scroll-padding-top:calc(var(--header-height,123px) + 20px)}
+.menu-index{top:calc(var(--header-height,123px) + 25px);max-height:calc(100svh - var(--header-height,123px) - 50px)}
+@media(max-width:940px){.header nav{max-height:calc(100svh - var(--header-height,103px));overflow-y:auto}}
+@media(max-width:700px){.menu-index{top:auto;max-height:none}}
