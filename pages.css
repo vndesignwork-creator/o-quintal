@@ -50,3 +50,11 @@ html{scroll-padding-top:calc(var(--header-height,123px) + 20px)}
 .reservation-phone p{font-size:14px;color:#cbd4c4}.reservation-phone>a{font:30px/1.6 'Playfair Display',Georgia,serif}
 .form-trap{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
 @media(max-width:400px){.reservation-fields{grid-template-columns:1fr}.reservation-panel{padding:30px 20px}}
+.social-links{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start}
+.social-links a{display:flex;flex-direction:column;align-items:center;gap:9px;min-width:66px;font-size:12px;line-height:1.4;text-decoration:none;color:inherit}
+.social-icon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border:1px solid #ffffff40;border-radius:50%;background:#16251e;transition:background .2s,transform .2s}
+.social-icon img{width:24px;height:24px;object-fit:contain}.digin-mark{font:800 12px/1 'DM Sans',sans-serif;letter-spacing:-.8px;color:white;text-align:center}
+.social-links a:hover .social-icon{background:#39523d;transform:translateY(-3px)}
+.social-links a:focus-visible{outline:2px solid #bc8e5f;outline-offset:5px;border-radius:3px}
+.contact-social .social-links{color:#16251e}.footer-top{gap:28px;flex-wrap:wrap}
+@media(max-width:700px){.social-links{gap:12px}.social-links a{min-width:60px}.social-icon{width:44px;height:44px}}
