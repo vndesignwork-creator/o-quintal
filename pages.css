@@ -31,3 +31,22 @@ html{scroll-padding-top:calc(var(--header-height,123px) + 20px)}
 /* Keep navigation visible at the top; below it, hide after 700ms of inactivity. */
 .header.scroll-aware{transition:transform .22s ease,box-shadow .22s ease;transform:translateY(0)}
 .header.scroll-aware.is-scrolled:not(.is-moving):not(:hover):not(:focus-within):not(:has(nav.open)){transform:translateY(-110%);pointer-events:none}
+.reservation-panel h2{font-size:clamp(32px,3.5vw,46px);color:var(--cream)}
+.reservation-panel h2 em{color:var(--copper)}
+.reservation-note{font-size:14px;line-height:1.7}
+.reservation-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px;margin-top:28px}
+.form-field{min-width:0}.form-field.full{grid-column:1/-1}
+.form-field label{display:block;font-size:14px;margin-bottom:8px;color:var(--cream)}
+.form-field label span{color:#b3c0ad;font-size:12px}
+.form-field input,.form-field textarea{display:block;width:100%;min-width:0;box-sizing:border-box;background:#fbf9f3;color:#16251e;border:1px solid #c1c7b7;border-radius:3px;padding:12px;font:16px/1.5 'DM Sans',sans-serif}
+.form-field textarea{resize:vertical}.form-field input:focus-visible,.form-field textarea:focus-visible{outline:3px solid #e4c49e;outline-offset:3px}
+.form-field small{margin-top:7px!important}
+.form-privacy{font-size:12px;line-height:1.7;color:#cbd4c4;margin-top:22px}
+.reservation-panel button{border:0;font:inherit;cursor:pointer}
+.reservation-panel button:disabled{opacity:.65;cursor:default}
+.reservation-status{font-size:14px;line-height:1.7;margin-top:18px;min-height:24px;color:#e4c49e}
+.reservation-status[data-state=success]{color:#d2ecbd}.reservation-status[data-state=error]{color:#ffd0b9}
+.reservation-phone{border-top:1px solid #ffffff30;margin-top:28px;padding-top:22px}
+.reservation-phone p{font-size:14px;color:#cbd4c4}.reservation-phone>a{font:30px/1.6 'Playfair Display',Georgia,serif}
+.form-trap{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:400px){.reservation-fields{grid-template-columns:1fr}.reservation-panel{padding:30px 20px}}
