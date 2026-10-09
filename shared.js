@@ -7,4 +7,19 @@ if(search){const normalize=value=>value.normalize('NFD').replace(/[\u0300-\u036f
 const galleryItems=[...document.querySelectorAll('.gallery-item')];document.querySelectorAll('[data-gallery-filter]').forEach(button=>button.addEventListener('click',()=>{const category=button.dataset.galleryFilter;document.querySelectorAll('[data-gallery-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));galleryItems.forEach(item=>{item.hidden=category!=='Tudo'&&item.dataset.category!==category})}));
 const lightbox=document.querySelector('#lightbox');if(lightbox){document.querySelectorAll('[data-lightbox]').forEach(link=>link.addEventListener('click',e=>{e.preventDefault();const original=link.querySelector('img'),image=lightbox.querySelector('#lightbox-image');image.src=link.getAttribute('href');image.alt=original.alt;lightbox.querySelector('#lightbox-caption').textContent=original.alt;lightbox.showModal()}));lightbox.querySelector('.dialog-close').addEventListener('click',()=>lightbox.close());lightbox.addEventListener('click',e=>{if(e.target!==lightbox)return;const r=lightbox.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)lightbox.close()})}
 const stickyHeader=document.querySelector('.header');
-if(stickyHeader){const syncHeader=()=>document.documentElement.style.setProperty('--header-height',`${stickyHeader.getBoundingClientRect().height}px`);syncHeader();new ResizeObserver(syncHeader).observe(stickyHeader);const updateScroll=()=>stickyHeader.classList.toggle('is-scrolled',window.scrollY>24);window.addEventListener('scroll',updateScroll,{passive:true});updateScroll();}
+if(stickyHeader){
+  const syncHeader=()=>document.documentElement.style.setProperty('--header-height',`${stickyHeader.getBoundingClientRect().height}px`);
+  syncHeader();new ResizeObserver(syncHeader).observe(stickyHeader);
+  stickyHeader.classList.add('scroll-aware');
+  let idleTimer;
+  const showWhileMoving=()=>{
+    stickyHeader.classList.add('is-moving');
+    stickyHeader.classList.toggle('is-scrolled',window.scrollY>24);
+    clearTimeout(idleTimer);
+    idleTimer=setTimeout(()=>stickyHeader.classList.remove('is-moving'),700);
+  };
+  window.addEventListener('scroll',showWhileMoving,{passive:true});
+  window.addEventListener('wheel',showWhileMoving,{passive:true});
+  window.addEventListener('touchmove',showWhileMoving,{passive:true});
+  stickyHeader.classList.toggle('is-scrolled',window.scrollY>24);
+}

@@ -28,3 +28,6 @@ html{scroll-padding-top:calc(var(--header-height,123px) + 20px)}
 .menu-index{top:calc(var(--header-height,123px) + 25px);max-height:calc(100svh - var(--header-height,123px) - 50px)}
 @media(max-width:940px){.header nav{max-height:calc(100svh - var(--header-height,103px));overflow-y:auto}}
 @media(max-width:700px){.menu-index{top:auto;max-height:none}}
+/* Show navigation during scroll movement; hide it after 700ms of inactivity. */
+.header.scroll-aware{transition:transform .22s ease,box-shadow .22s ease;transform:translateY(0)}
+.header.scroll-aware:not(.is-moving):not(:hover):not(:focus-within):not(:has(nav.open)){transform:translateY(-110%);pointer-events:none}
