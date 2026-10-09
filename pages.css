@@ -13,3 +13,10 @@
 .inner-page:has(#menu-search) .page-intro h1{font-size:clamp(40px,4.5vw,62px)}
 .inner-page:has(#menu-search) .page-lead{margin-top:17px}
 @media(max-width:700px){.menu-index{flex-wrap:nowrap;overflow-x:auto;padding-bottom:17px;margin-bottom:8px}.menu-index .eyebrow{display:none}.menu-index a{flex:0 0 auto}.inner-page:has(#menu-search) .page-intro{padding-top:32px;padding-bottom:28px}.inner-page:has(#menu-search) .page-intro h1{font-size:42px}}
+/* Original transparent logo, shown in white on the dark brand surfaces. */
+.brand-logo{position:relative;display:block;width:135px;height:90.4px;overflow:hidden;flex-shrink:0}
+.brand-logo img{position:absolute;width:111.8%;height:auto;max-width:none;left:-5.77%;top:-31.32%;object-fit:contain;filter:brightness(0) invert(1)}
+.header{padding-top:16px;padding-bottom:16px}
+footer .brand-logo{width:165px;height:110.5px}
+@media(max-width:940px){.header{padding-top:13px;padding-bottom:13px}}
+@media(max-width:700px){.header .brand-logo{width:115px;height:77px}footer .brand-logo{width:145px;height:97.1px}}
