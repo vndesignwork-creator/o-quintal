@@ -58,3 +58,13 @@ html{scroll-padding-top:calc(var(--header-height,123px) + 20px)}
 .social-links a:focus-visible{outline:2px solid #bc8e5f;outline-offset:5px;border-radius:3px}
 .contact-social .social-links{color:#16251e}.footer-top{gap:28px;flex-wrap:wrap}
 @media(max-width:700px){.social-links{gap:12px}.social-links a{min-width:60px}.social-icon{width:44px;height:44px}}
+.booking-grid:has(.booking-widget){grid-template-columns:minmax(0,1.7fr) minmax(250px,1fr);gap:5%}
+.booking-widget{min-width:0}.booking-widget>.eyebrow{color:#8b6844}.booking-widget h2{font-size:clamp(32px,3.5vw,46px)}.booking-widget h2 em{color:#91683f}
+.booking-widget>p:not(.eyebrow){font-size:15px;color:#596a59;margin:20px 0}
+.reservation-widget{display:block;width:100%;height:650px;border:1px solid #d0d6c7;border-radius:4px;background:white;margin-top:25px}
+.booking-widget .widget-help{font-size:13px;line-height:1.8}.widget-help a{text-decoration:underline;text-underline-offset:3px}
+.booking-alternative{padding-bottom:60px}.booking-alternative details{border-top:1px solid var(--line);padding-top:25px}
+.booking-alternative summary{font-size:19px;cursor:pointer;color:var(--forest);padding:10px 0}.booking-alternative summary:focus-visible{outline:2px solid #91683f;outline-offset:5px}
+.alternative-intro{max-width:700px;margin:15px 0 25px;color:#596a59}.booking-alternative .reservation-panel{max-width:700px}
+@media(max-width:940px){.booking-grid:has(.booking-widget){grid-template-columns:1fr;gap:40px}.reservation-widget{height:680px}}
+@media(max-width:400px){.reservation-widget{height:740px}}
