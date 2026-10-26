@@ -1,0 +1,27 @@
+# O Quintal — Restaurante na Amadora
+
+> Cozinha portuguesa e petiscos. Informação resumida do site; confirmar preços, disponibilidade e horários especiais com o restaurante.
+
+## Informações essenciais
+
+- Nome: O Quintal
+- Morada: Rua Bernardim Ribeiro, 5B, 2700-111 Amadora, Portugal
+- Telefone: +351 214 930 380 (rede fixa nacional)
+- Cozinha: portuguesa; ementa com petiscos, peixe, carne e opções vegetarianas
+- Horário indicado: terça a sábado, 12h–15h e 19h–22h; domingo, 12h–15h; segunda-feira, encerrado. Confirmar feriados por telefone.
+- Reservas: módulo Zomato Book na página de reservas. Pedidos alternativos por email carecem de confirmação manual.
+
+## Páginas
+
+- [O Quintal](https://vndesignwork-creator.github.io/o-quintal/): Restaurante O Quintal, na Amadora: cozinha portuguesa, petiscos e opções vegetarianas. Rua Bernardim Ribeiro, 5B. Consulte a ementa e reserve online.
+- [Ementa e preços](https://vndesignwork-creator.github.io/o-quintal/menu.html): Consulte a ementa do Quintal na Amadora: petiscos para partilhar, peixe, carne, opções vegetarianas, sobremesas e bebidas. Confirme preços com o restaurante.
+- [Sobre o restaurante](https://vndesignwork-creator.github.io/o-quintal/sobre-nos.html): Conheça O Quintal, restaurante de cozinha portuguesa na Rua Bernardim Ribeiro, 5B, na Amadora. Um espaço acolhedor para almoços e jantares em companhia.
+- [Fotografias do restaurante e dos pratos](https://vndesignwork-creator.github.io/o-quintal/galeria.html): Explore fotografias do espaço, dos pratos e das sobremesas do restaurante O Quintal, na Amadora. Conheça o ambiente antes da sua visita.
+- [Contactos, morada e horário](https://vndesignwork-creator.github.io/o-quintal/contactos.html): O Quintal: Rua Bernardim Ribeiro, 5B, 2700-111 Amadora. Telefone 21 493 0380. Consulte o horário, a localização e como reservar mesa.
+- [Reservar mesa online](https://vndesignwork-creator.github.io/o-quintal/reservas.html): Reserve mesa no Quintal, na Amadora, através do Zomato Book. Consulte a disponibilidade online ou envie um pedido por email. Telefone 21 493 0380.
+
+## Reservas online
+
+- [Zomato Book do Quintal](https://www.zomatobook.com/widget/makereservation03.aspx?id=WQ58ORN2O)
+
+Última revisão deste resumo: 2026-10-26.
